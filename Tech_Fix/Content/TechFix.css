@@ -1,0 +1,178 @@
+﻿/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* NavBar Styles */
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+    .dashboard-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .dashboard-card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .dashboard-card i {
+        font-size: 40px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .dashboard-card p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .dashboard-card small {
+        font-size: 14px;
+        color: #777;
+    }
+
+/* Table Styles */
+.quotes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .quotes-table th, .quotes-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .quotes-table th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .quotes-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .quotes-table tr:hover {
+        background-color: #e9ecef;
+    }
+
+    .quotes-table td {
+        font-size: 16px;
+        color: #333;
+    }
+
+        
+
+/* Footer Styles */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* General container for charts */
+.charts-section {
+    margin: 20px 0;
+}
+
+    .charts-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    /* Style for individual chart canvases */
+    .charts-section canvas {
+        display: block;
+        width: 100%; /* Make chart responsive */
+        height: auto;
+        max-width: 800px; /* Maximum width of the chart */
+        margin: 0 auto; /* Center align */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+.request-quote-button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for a larger button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-transform: uppercase; /* Uppercase text */
+    font-family: Arial, sans-serif; /* Font */
+}
+
+    .request-quote-button:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+

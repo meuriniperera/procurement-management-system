@@ -1,0 +1,95 @@
+﻿/* Order Container */
+.order-container {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .order-table th, .order-table td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .order-table th {
+        background-color: #28a745;
+        color: white;
+        font-weight: 700;
+    }
+
+    .order-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .order-table td button {
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .order-table td button:hover {
+            background-color: #0056b3;
+        }
+
+/* Modal Styles */
+#editOrderModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    z-index: 1000;
+}
+
+    #editOrderModal h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    #editOrderModal form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #editOrderModal label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #editOrderModal select {
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    #editOrderModal button {
+        padding: 0.75rem;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        #editOrderModal button:hover {
+            background-color: #218838;
+        }

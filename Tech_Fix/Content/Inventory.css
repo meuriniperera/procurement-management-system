@@ -1,0 +1,47 @@
+﻿/* General GridView table styles */
+.inventory-table {
+    width: 80%; /* Adjust this percentage to control the table's width */
+    border-collapse: collapse;
+    margin: 20px auto; /* 20px on top and bottom, auto on left and right to center */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px; /* Optional: Adds padding inside the table cells */
+}
+
+    /* Header style */
+    .inventory-table th {
+        background-color: #4CAF50; /* Green header */
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 2px solid #ddd;
+    }
+
+    /* Table row style */
+    .inventory-table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Hover effect for table rows */
+    .inventory-table tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    /* Alternate row background color */
+    .inventory-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Price column alignment */
+    .inventory-table td:nth-child(4) {
+        text-align: right;
+    }
+
+    /* Set font weight for important columns */
+    .inventory-table td:nth-child(1),
+    .inventory-table td:nth-child(2) {
+        font-weight: bold;
+    }

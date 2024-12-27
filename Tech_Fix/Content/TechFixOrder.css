@@ -1,0 +1,148 @@
+﻿/* Order Table Styles */
+.order-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    .order-container h2 {
+        margin-bottom: 1.5rem;
+        color: #264653;
+    }
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+    .order-table th,
+    .order-table td {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    .order-table th {
+        background-color: #2a9d8f;
+        color: white;
+    }
+
+    .order-table td input[type="number"] {
+        width: 80px;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .order-table td button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .order-table td .editBtn {
+        background-color: #e9c46a;
+        color: #264653;
+    }
+
+    .order-table td .deleteBtn {
+        background-color: #f4a261;
+        color: white;
+    }
+
+    .order-table td button:hover {
+        opacity: 0.8;
+    }
+
+/* Add Order Modal Styles */
+#addOrderModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    width: 400px;
+    border: 2px solid #264653;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    #addOrderModal h2 {
+        margin-bottom: 1rem;
+        color: #264653;
+        text-align: center;
+    }
+
+#addOrderForm {
+    display: flex;
+    flex-direction: column;
+}
+
+    #addOrderForm label {
+        margin-bottom: 0.5rem;
+        color: #264653;
+    }
+
+    #addOrderForm input[type="text"],
+    #addOrderForm input[type="number"] {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #addOrderForm button {
+        padding: 0.7rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #2a9d8f;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        #addOrderForm button:hover {
+            background-color: #264653;
+        }
+
+#addOrderModal button[type="button"] {
+    background-color: #e76f51;
+    margin-top: 1rem;
+}
+
+    #addOrderModal button[type="button"]:hover {
+        background-color: #d63f2d;
+    }
+
+button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 12px 20px; /* Add some padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-bottom: 10px;
+}
+
+    button:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+
+    button:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add custom focus outline */
+    }
+
+    button:active {
+        background-color: #1e7e34; /* Even darker green when clicked */
+    }
